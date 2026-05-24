@@ -1,0 +1,86 @@
+/* Simple, clean portfolio style */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f8f8fc;
+  color: #222b2f;
+  line-height: 1.6;
+}
+
+header {
+  background: #283593;
+  color: #fff;
+  padding: 2em 0 1em 0;
+  text-align: center;
+}
+
+header .subtitle {
+  font-size: 1.1em;
+  color: #b3c1f7;
+  margin-top: -10px;
+  margin-bottom: 18px;
+}
+
+nav {
+  margin-top: 12px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  margin: 0 6px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+nav a:hover {
+  background: #5566a9;
+}
+
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 28px 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(50,50,80,0.06);
+}
+
+section {
+  margin-bottom: 40px;
+}
+h2 {
+  color: #283593;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+}
+
+.project-card {
+  background: #f0f3fa;
+  border-radius: 8px;
+  padding: 18px 14px;
+  box-shadow: 0 1px 4px rgba(80,90,120,0.05);
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+.project-card a {
+  color: #283593;
+  text-decoration: underline;
+  font-size: 0.98em;
+}
+
+footer {
+  text-align: center;
+  background: #e0e0e0;
+  color: #666;
+  padding: 16px 0;
+  margin-top: 50px;
+  font-size: 0.93em;
+  border-radius: 0 0 8px 8px;
+}
