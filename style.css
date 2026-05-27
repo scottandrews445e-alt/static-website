@@ -109,56 +109,38 @@ p {
   background: #2563eb;
   transform: scale(1.05);
 }
-
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
+  justify-content: center;
+  gap: 25px;
 }
 
 .project-card {
   position: relative;
   background: #111827;
   border-radius: 18px;
-  padding: 20px;
+  padding: 18px;
   overflow: hidden;
   color: white;
-  transition: transform 0.4s ease;
+  transition: 0.4s ease;
   z-index: 1;
+
+  width: 320px;
 }
 
-.project-card::before {
-  content: "";
-  position: absolute;
-  inset: -3px;
-  background: linear-gradient(
-    45deg,
-    #00f0ff,
-    #7a5cff,
-    #ff4fd8,
-    #00f0ff
-  );
-  background-size: 400%;
-  border-radius: 20px;
-  z-index: -2;
-  animation: glowing 8s linear infinite;
-  filter: blur(12px);
-  opacity: 0.8;
+.project-card img,
+.project-card video {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 12px 0;
+  display: block;
 }
-
-
-.project-card::after {
-  content: "";
-  position: absolute;
-  inset: 3px;
-  background: #111827;
-  border-radius: 16px;
-  z-index: -1;
-}
-
 
 .project-card:hover {
-  transform: translateY(-10px) scale(1.02);
+  transform: translateY(-8px);
 }
 
 @keyframes glowing {
