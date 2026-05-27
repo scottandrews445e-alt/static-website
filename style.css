@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +10,7 @@ body {
   color: #e5e7eb;
   line-height: 1.7;
 }
+
 header {
   background: linear-gradient(135deg, #111827, #1e3a8a);
   text-align: center;
@@ -46,7 +46,6 @@ header h1 {
   font-size: 1rem;
 }
 
-
 nav {
   margin-top: 15px;
 }
@@ -71,6 +70,7 @@ main {
   max-width: 1100px;
   margin: 40px auto;
   padding: 30px;
+}
 
 section {
   margin-bottom: 70px;
@@ -87,7 +87,6 @@ h2 {
 p {
   margin-bottom: 15px;
 }
-
 
 #skills ul {
   list-style: none;
@@ -109,14 +108,37 @@ p {
   background: #2563eb;
   transform: scale(1.05);
 }
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
   justify-content: center;
   gap: 25px;
 }
-  .project-card {
+
+.project-card {
+  background: #111827;
+  border: 1px solid #2563eb;
+  border-radius: 16px;
+  padding: 18px;
+  transition: 0.3s ease;
   overflow: visible;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(37,99,235,0.4);
+}
+
+.project-card h3 {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.project-card p {
+  color: #d1d5db;
+  font-size: 0.96rem;
 }
 
 .project-card img {
@@ -144,46 +166,6 @@ p {
   border-radius: 10px;
   background: #000;
 }
-@keyframes glowing {
-  0% {
-    background-position: 0 0;
-  }
-
-  50% {
-    background-position: 400% 0;
-  }
-
-  100% {
-    background-position: 0 0;
-  }
-}
-
-.project-card h3 {
-  color: #ffffff;
-  margin-bottom: 15px;
-  font-size: 1.3rem;
-}
-
-.project-card p {
-  color: #d1d5db;
-  font-size: 0.96rem;
-}
-
-.project-card img,
-.project-card video {
-  width: 100%;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin: 10px 0;
-  display: block;
-}
-
-.project-card:hover img,
-.project-card:hover video {
-  transform: scale(1.03);
-}
-}
 
 form {
   margin-top: 20px;
@@ -208,6 +190,7 @@ form textarea:focus {
   border-color: #3b82f6;
   box-shadow: 0 0 10px rgba(59,130,246,0.5);
 }
+
 button {
   background: linear-gradient(135deg, #2563eb, #1d4ed8);
   color: white;
@@ -224,6 +207,7 @@ button:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(37,99,235,0.6);
 }
+
 footer {
   background: #111827;
   text-align: center;
@@ -232,6 +216,7 @@ footer {
   margin-top: 50px;
   border-top: 1px solid #1f2937;
 }
+
 ::-webkit-scrollbar {
   width: 10px;
 }
