@@ -115,35 +115,35 @@ p {
   justify-content: center;
   gap: 25px;
 }
-
-.project-card {
-  position: relative;
-  background: #111827;
-  border-radius: 18px;
-  padding: 18px;
-  overflow: hidden;
-  color: white;
-  transition: 0.4s ease;
-  z-index: 1;
-
-  width: 320px;
+  .project-card {
+  overflow: visible;
 }
-.project-card img,
-.project-card video {
+
+.project-card img {
   width: 100%;
-  max-height: 180px;
+  height: 160px;
   object-fit: contain;
-  border-radius: 10px;
-  margin: 12px 0;
   display: block;
+  margin: 12px 0;
+  border-radius: 10px;
   background: #000;
   transition: 0.3s ease;
 }
-.project-card img:hover,
-.project-card video:hover {
+
+.project-card:hover img {
   transform: scale(1.03);
 }
 
+.project-card video {
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: contain;
+  display: block;
+  margin: 12px 0;
+  border-radius: 10px;
+  background: #000;
+}
 @keyframes glowing {
   0% {
     background-position: 0 0;
