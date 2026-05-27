@@ -128,19 +128,20 @@ p {
 
   width: 320px;
 }
-
 .project-card img,
 .project-card video {
   width: 100%;
-  height: 140px;
-  object-fit: cover;
+  max-height: 180px;
+  object-fit: contain;
   border-radius: 10px;
   margin: 12px 0;
   display: block;
+  background: #000;
+  transition: 0.3s ease;
 }
-
-.project-card:hover {
-  transform: translateY(-8px);
+.project-card img:hover,
+.project-card video:hover {
+  transform: scale(1.03);
 }
 
 @keyframes glowing {
