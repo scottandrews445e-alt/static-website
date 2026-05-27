@@ -155,16 +155,14 @@ p {
 .project-card:hover img {
   transform: scale(1.03);
 }
-
 .project-card video {
   width: 100%;
   height: auto;
-  max-height: 180px;
-  object-fit: contain;
   display: block;
   margin: 12px 0;
   border-radius: 10px;
-  background: #000;
+  background: black;
+}
 }
 
 form {
